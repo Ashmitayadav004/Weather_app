@@ -6,7 +6,7 @@ import requests
 def data_get():
     city=city_name.get()
   
-    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + ""
+    url = ""
     data = requests.get(url).json()
 
     w_label1.config(text=data["weather"][0]["main"])
